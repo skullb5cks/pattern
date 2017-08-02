@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>pattern</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .layer{position:absolute;background-color:red;width:100px;height:100px;z-index:20;}
+        .dimm{position:fixed;top:0;bottom:0;left:0;right:0;background-color:black;opacity:0.5;}
+        button{position:relative;z-index:10;}
+    </style>
+</head>
+<body>
+    <button class="_toggle1">toggle1</button>
+    <button class="_toggle2">toggle2</button>
+    <div class="layer _layer1" style="display:none;">layer1</div>
+    <div class="layer _layer2" style="display:none;left:100px;">layer2</div>
+
+    <button class="_toggle3">toggle3</button>
+    <button class="_toggle4">toggle4</button>
+    <div class="layer _layer3" style="display:none;top:100px;">layer3</div>
+    <div class="layer _layer4" style="display:none;top:100px;left:100px;">layer4</div>
+
+    <button class="_toggle5">hideAll</button>
+
+    <div class="dimm" style="display:none;"></div>
+
+    <script src="./src/layer.js"></script>
+    <script src="./src/mediator.js"></script>
+    <script src="./src/utils.js"></script>
+    <script src="./src/dimm.js"></script>
+    <script src="./src/app.js"></script>
+</body>
+</html>
