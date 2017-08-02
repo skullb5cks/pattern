@@ -3,7 +3,7 @@ var mediator = (function(){
         _subscribe = function(topic, callback) {
             if (!_topics.hasOwnProperty(topic)) {
                 _topics[topic] = [];
-            }
+            } 
             _topics[topic].push(callback);
         },
         _publish = function(topic) {

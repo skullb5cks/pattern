@@ -17,7 +17,7 @@ mediator.subscribe('HideAllLayer', function() {
     _layer3.hide();
     _hideDimm();
 });
-
+ 
 mediator.subscribe('HideAllLayer', function() {
     _layer4.hide();
     _hideDimm();

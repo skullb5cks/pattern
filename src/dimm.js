@@ -11,7 +11,7 @@ function _showDimm() {
         _dimm.style.display = 'block';
     }
 }
-
+ 
 function _toggleDimm() {
     if (this.element.style.display === 'block') {
         _showDimm();
